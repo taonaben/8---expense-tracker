@@ -1,0 +1,23 @@
+CREATE TABLE expense (
+    id SERIAL PRIMARY KEY NOT NULL,
+    title VARCHAR(50) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    price DECIMAL(10,2) NOT NULL
+    -- created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE income (
+    id SERIAL PRIMARY KEY NOT NULL,
+    title VARCHAR(50) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    price DECIMAL(10,2) NOT NULL
+    -- created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE balance (
+    id SERIAL PRIMARY KEY NOT NULL,
+    current_balance DECIMAL(10,2) NOT NULL
+    -- created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+
